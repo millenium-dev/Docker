@@ -1,0 +1,5 @@
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+39b22fb438f1        debian              "bash"                   40 seconds ago      Exited (0) 10 seconds ago                       nostalgic_ardinghelli
+b5821d8a5686        ubuntu              "/bin/bash"              44 seconds ago      Exited (0) 3 seconds ago                        nifty_borg
+df9e52f41f0b        nginx               "/docker-entrypoint.…"   47 seconds ago      Up 47 seconds               80/tcp              busy_proskuriakova
