@@ -1,0 +1,16 @@
+
+$ docker stop busy_proskuriakova
+
+$ docker system prune
+
+$ docker rmi 08 ee 1e
+
+
+
+Evert@LAPTOP-HLCPJSVJ MINGW64 /c/Program Files/Docker Toolbox
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+Evert@LAPTOP-HLCPJSVJ MINGW64 /c/Program Files/Docker Toolbox
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
