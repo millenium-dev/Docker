@@ -1,0 +1,26 @@
+$ docker container ls -a
+CONTAINER ID        IMAGE                               COMMAND                  CREATED             STATUS                         PORTS               NAMES
+36c15c094faf        devopsdockeruh/exec_bash_exercise   "docker-entrypoint.s…"   23 minutes ago      Up 23 minutes                                      nifty_benz
+316017b06228        ubuntu:16.04                        "sh -c 'while true; …"   31 minutes ago      Up 31 minutes                                      looper-it
+aac91c3a8c14        fav_distro:xenial                   "uptime"                 About an hour ago   Exited (0) About an hour ago                       happy_almeida
+8b416be0882a        devopsdockeruh/pull_exercise        "node index.js"          2 hours ago         Exited (0) 2 hours ago                             inspiring_dhawan
+
+
+
+$ docker exec -it 36c15c094faf bash
+root@36c15c094faf:/usr/app# ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  2.9 619908 30144 ?        Ssl  15:02   0:00 node index
+root        17  0.0  0.3  18188  3112 pts/0    Ss   15:11   0:00 bash
+root        22  0.0  0.2  36636  2736 pts/0    R+   15:11   0:00 ps aux
+root@36c15c094faf:/usr/app# tail -f ./logs.txt
+"Docker is easy"
+Thu, 06 Aug 2020 15:12:10 GMT
+Thu, 06 Aug 2020 15:12:13 GMT
+Thu, 06 Aug 2020 15:12:16 GMT
+Thu, 06 Aug 2020 15:12:19 GMT
+Secret message is:
+"Docker is easy"
+Thu, 06 Aug 2020 15:12:25 GMT
+Thu, 06 Aug 2020 15:12:28 GMT
+Thu, 06 Aug 2020 15:12:31 GMT
